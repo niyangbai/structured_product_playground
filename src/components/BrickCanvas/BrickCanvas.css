@@ -1,0 +1,30 @@
+.brick-canvas-container {
+  display: flex;
+  height: 100vh;
+  background: #f8f9fa;
+}
+
+.brick-canvas {
+  flex: 1;
+  position: relative;
+}
+
+.react-flow__node {
+  cursor: pointer;
+}
+
+.react-flow__edge-path {
+  stroke: #64748b;
+  stroke-width: 2;
+}
+
+.react-flow__edge.animated path {
+  stroke-dasharray: 5;
+  animation: dashdraw 0.5s linear infinite;
+}
+
+@keyframes dashdraw {
+  to {
+    stroke-dashoffset: -10;
+  }
+}

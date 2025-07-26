@@ -1,0 +1,67 @@
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.app-header {
+  padding: 16px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.app-header h1 {
+  margin: 0 0 4px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.app-subtitle {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+.app-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.main-section {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.canvas-section {
+  flex: 1;
+  min-width: 0;
+}
+
+.inspector-section {
+  flex-shrink: 0;
+}
+
+.bottom-section {
+  display: flex;
+  height: 300px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.chart-section {
+  flex: 1;
+  min-width: 0;
+  padding: 16px;
+  background: #f8fafc;
+}
+
+.simulation-section {
+  flex-shrink: 0;
+  width: 400px;
+}

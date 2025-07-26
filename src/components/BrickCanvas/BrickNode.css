@@ -1,0 +1,74 @@
+.brick-node {
+  background: white;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 12px;
+  min-width: 160px;
+  min-height: 80px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.brick-node:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.brick-node.selected {
+  border-width: 3px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.brick-node-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.brick-icon {
+  font-size: 16px;
+}
+
+.brick-type {
+  font-weight: 600;
+  font-size: 12px;
+  color: #334155;
+}
+
+.brick-node-content {
+  font-size: 10px;
+  color: #64748b;
+}
+
+.brick-property {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.property-key {
+  font-weight: 500;
+}
+
+.property-value {
+  font-weight: 400;
+  max-width: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.brick-handle {
+  width: 8px !important;
+  height: 8px !important;
+  border: 2px solid white !important;
+  border-radius: 50% !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+.brick-handle:hover {
+  transform: scale(1.2);
+}

@@ -2,6 +2,7 @@
   "name": "structured-product-builder",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://niyang.github.io/structured_product_playground",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -26,7 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +50,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-plotly.js": "^2.6.3"
+    "@types/react-plotly.js": "^2.6.3",
+    "gh-pages": "^6.3.0"
   }
 }
